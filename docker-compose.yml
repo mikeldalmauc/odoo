@@ -10,8 +10,17 @@ services:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
       - ./addons:/mnt/extra-addons
+      - ./odoo-entrypoint.sh:/usr/local/bin/odoo-entrypoint.sh
+    entrypoint: ["/usr/local/bin/odoo-entrypoint.sh"]
     environment:
+      - LANG=C.UTF-8
+      - LANGUAGE=C.UTF-8
+      - LC_ALL=C.UTF-8
       - PASSWORD_FILE=/run/secrets/postgresql_password
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_USER=odoo
+      - DB_NAME=miempresadb
     secrets:
       - postgresql_password
 
