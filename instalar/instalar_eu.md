@@ -46,7 +46,7 @@ Ireki terminal bat `docker-compose.yml` dagoen direktorioan eta exekutatu:
 docker compose up -d
 ```
 
-![alt text](instalar/image-2.png)
+![alt text](image-2.png)
 
 Docker Desktop-en agertzen diren portuen bidez aplikazioetara sar zaitezke. Handik aplikazioaren hainbat parametro konfigura ditzakezu.
 
@@ -56,9 +56,9 @@ Docker Desktop-en agertzen diren portuen bidez aplikazioetara sar zaitezke. Hand
 
 Odoo-n, **Ezarpenak** atalean, behealdean dago aukeraketa. Aktibatu eta garatzaile tresnak agertuko dira (intsektu formako botoiarekin).
 
-![alt text](instalar/image-3.png)
+![alt text](image-3.png)
 
-![alt text](instalar/image-4.png)
+![alt text](image-4.png)
 
 ---
 
@@ -70,7 +70,7 @@ Lehenik, ikus kontenedoreen izenak:
 docker ps
 ```
 
-![alt text](instalar/image.png)
+![alt text](image.png)
 
 Web-a daraman makinak `odoo-web-1` izena du. Kontenedore batean komando bat exekutatzeko:
 
@@ -90,7 +90,7 @@ Odoo komandoa erabiliko dugu.
    `docker-compose.yml` fitxategian ikus dezakezu direktorio hori proiektuko `addons` karpetarekin lotuta dagoela.
    *Karpeta ez badago, sortu egingo da.*
 
-![alt text](instalar/image-1.png)
+![alt text](image-1.png)
 
 2. Exekutatu:
 
@@ -117,7 +117,7 @@ Bolumenak bi modutara sor daitezke:
 * Gure makinako karpeta bati lotuta (bind mount)
 * Docker-en barneko bolumen gisa (virtuala), kontenedorearen fitxategi-sisteman muntatuta
 
-![alt text](instalar/image-5.png)
+![alt text](image-5.png)
 
 Irudian bi mota ageri dira:
 
@@ -125,7 +125,7 @@ Irudian bi mota ageri dira:
 
 ---
 
-![alt text](instalar/image-6.png)
+![alt text](image-6.png)
 
 * **./addons**: Gure makinako karpeta bati lotutako bolumena.
 
